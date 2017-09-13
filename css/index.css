@@ -179,6 +179,7 @@ html, body {
 	height: 2.82rem;
 	background-image: url(../images/page1/wedding-text.png);
 	animation-delay: 0.6s;
+	z-index: 11;
 }
 .page1 .text-wrap .flower {
 	position: absolute;
