@@ -136,3 +136,16 @@ function init() {
 
 	photoSwiper.stopAutoplay()
 }
+
+var media = document.getElementById("bgmedia");
+if (!media.src) {
+    media.src = "http://res3.maka.im/user/2443287/music/ef63ea952ceb6418908fb521c0a4f6b1.mp3"
+}
+
+if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
+    WeixinJSBridge.invoke('getNetworkType', {}, function (res) {
+        media.play();
+    });
+} else {
+	media.play();
+}
