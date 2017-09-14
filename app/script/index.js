@@ -67,7 +67,7 @@ picArr.map(pic => {
 	loader.addImage(pic)
 })
 
-loader.addImage("http://appmusic.qq.com/music/641012099/bgm.mp3");
+loader.addImage("http://res3.maka.im/user/2443287/music/ef63ea952ceb6418908fb521c0a4f6b1.mp3");
 loader.addProgressListener(function (e) {
 	var percent = Math.round((e.completedCount / e.totalCount) * 100);
 	console.log(percent)
@@ -144,7 +144,12 @@ function init() {
 	photoSwiper.stopAutoplay()
 }
 
-var media = document.getElementById("bgmedia");
+Z('#btn').click(() => {
+	alert('click')
+	document.getElementById("bgmedia").play()
+})
+
+v/*ar media = document.getElementById("bgmedia");
 if (!media.src) {
     media.src = "http://res3.maka.im/user/2443287/music/ef63ea952ceb6418908fb521c0a4f6b1.mp3"
 }
@@ -155,4 +160,4 @@ if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "functi
     });
 } else {
 	media.play();
-}
+}*/
