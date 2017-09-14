@@ -82,6 +82,7 @@ loader.start();
 
 function init() {
 	var pages = Z('.page');
+	var arrow = Z('#arrow');
 
 	new Swiper('#pages', {
 		direction: 'vertical',
@@ -107,6 +108,12 @@ function init() {
 				photoSwiper.startAutoplay()
 			} else {
 				photoSwiper.stopAutoplay()
+			}
+
+			if (swiper.activeIndex == 5) {
+				arrow.hide();
+			} else {
+				arrow.show();
 			}
 		},
 		onSlideChangeEnd: (swiper) => {
