@@ -111,6 +111,7 @@ function init() {
 
 	new Swiper('#photos',{
 		loop: true,
+		autoplay: 1000,
 		effect : 'coverflow',
 		slidesPerView: 1.4,
 		centeredSlides: true,
