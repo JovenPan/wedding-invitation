@@ -4173,8 +4173,8 @@ body,
 }
 .page1 .center .flower2 {
   position: absolute;
-  right: 2.66rem;
-  bottom: 6.66rem;
+  right: 0;
+  top: 5rem;
   -webkit-transform: rotate(322deg);
   transform: rotate(322deg);
 }
