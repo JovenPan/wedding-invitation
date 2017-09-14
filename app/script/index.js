@@ -10,7 +10,7 @@ import './swiper.min.js'
 var Z = Zepto;
 
 // pre load
-/*const picArr = [
+const picArr = [
 	require('../images/page-bg1.png'),
 	require('../images/page-bg2.png'),
 	require('../images/title-bg.png'),
@@ -77,15 +77,9 @@ loader.addCompletionListener(function () {
 	Z('.loading').hide()
 	init()
 });
-loader.start();*/
+loader.start();
 
 
-Z('.loading').hide()
-init()
-
-
-
-console.log('init');
 function init() {
 	var pages = Z('.page');
 
