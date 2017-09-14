@@ -4134,7 +4134,7 @@ body,
 .page1 .center .body {
   position: absolute;
   left: 50%;
-  bottom: 2.25rem;
+  bottom: 2.1rem;
   margin-left: -2rem;
   width: 3.48rem;
   height: 4.34rem;
@@ -4475,7 +4475,7 @@ body,
 .page2 .content .text3 {
   position: absolute;
   left: 50%;
-  top: 6rem;
+  top: 5.8rem;
   margin-left: -3.35rem;
 }
 .page2 .content .text3 i {
@@ -4545,10 +4545,6 @@ body,
   background-image: url(images/584f026c.leaf-red.png);
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
-}
-.page3 .content {
-  -webkit-transform: translateY(0.6rem);
-  transform: translateY(0.6rem);
 }
 .page3 .photo .bg {
   position: absolute;
@@ -4775,10 +4771,6 @@ body,
   animation-delay: 1.4s;
   -webkit-animation-duration: 2.5s;
   animation-duration: 2.5s;
-}
-.page4 .content {
-  -webkit-transform: translateY(0.6rem);
-  transform: translateY(0.6rem);
 }
 .page4 .photo .bg {
   position: absolute;
@@ -5035,10 +5027,6 @@ body,
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
 }
-.page5 .content {
-  -webkit-transform: translateY(1rem);
-  transform: translateY(1rem);
-}
 .page5 .content .leaf {
   position: absolute;
   left: 4rem;
@@ -5130,7 +5118,7 @@ body,
   width: 2.28rem;
   height: 2.28rem;
   margin: 0 0.1rem 0.1rem 0;
-  /*border: 1px solid red;*/
+  border-radius: 2px;
   background-size: cover;
 }
 .page5 .photo .pic1 {
@@ -5203,7 +5191,7 @@ body,
 }
 .page5 .float .flower2 {
   position: absolute;
-  top: 4.8rem;
+  top: 3.8rem;
   left: 1rem;
   -webkit-transform: rotate(87deg);
   transform: rotate(87deg);
@@ -5235,7 +5223,7 @@ body,
 }
 .page5 .float .flower4 {
   position: absolute;
-  top: 9rem;
+  top: 3.3rem;
   left: 5.7rem;
 }
 .page5 .float .flower4 i {
