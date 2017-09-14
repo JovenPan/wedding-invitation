@@ -102,6 +102,15 @@ function init() {
 			pages.eq(swiper.activeIndex).find('.animated').css({
 				display: 'block'
 			})
+
+			if (swiper.activeIndex == 4) {
+				photoSwiper.startAutoplay()
+			} else {
+				photoSwiper.stopAutoplay()
+			}
+		},
+		onSlideChangeEnd: (swiper) => {
+			console.log('end', swiper)
 		}
 	})
 
@@ -109,9 +118,10 @@ function init() {
 		display: 'block'
 	})
 
-	new Swiper('#photos',{
+	const photoSwiper = new Swiper('#photos',{
 		loop: true,
-		autoplay: 1000,
+		autoplay: 2000,
+		speed: 1000,
 		effect : 'coverflow',
 		slidesPerView: 1.4,
 		centeredSlides: true,
@@ -123,4 +133,6 @@ function init() {
 			slideShadows : false
 		}
 	})
+
+	photoSwiper.stopAutoplay()
 }
