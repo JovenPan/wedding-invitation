@@ -159,8 +159,8 @@ function getUrlParam(name) {
 
 if(getUrlParam('location') == 'hubei') {
 	const datePic = require('../images/page1/date2.png')
-	const locPic = require('../images/invatation2-2..png')
-	const invPic = require('../images/invatation1-2..png')
+	const locPic = require('../images/invatation2-2.png')
+	const invPic = require('../images/invatation1-2.png')
 
 	Z('#date').css({
 		'background-image': 'url('+datePic+')'
