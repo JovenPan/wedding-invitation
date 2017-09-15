@@ -70,7 +70,7 @@ picArr.map(pic => {
 loader.addImage("http://res3.maka.im/user/2443287/music/ef63ea952ceb6418908fb521c0a4f6b1.mp3");
 loader.addProgressListener(function (e) {
 	var percent = Math.round((e.completedCount / e.totalCount) * 100);
-	console.log(percent)
+	// console.log(percent)
 	Z("#percent").html(percent);
 });
 loader.addCompletionListener(function () {
@@ -147,4 +147,31 @@ Z('#start').click(() => {
 	Z('.loading').hide()
 	init()
 })
+
+// 获取传参
+function getUrlParam(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) {
+        return unescape(r[2]);
+    }
+}
+
+if(getUrlParam('location') == 'hubei') {
+	const datePic = require('../images/page1/date2.png')
+	const locPic = require('../images/invatation2-2..png')
+	const invPic = require('../images/invatation1-2..png')
+
+	Z('#date').css({
+		'background-image': 'url('+datePic+')'
+	})
+
+	Z('#loc').css({
+		'background-image': 'url('+locPic+')'
+	})
+
+	Z('#inv').css({
+		'background-image': 'url('+invPic+')'
+	})
+}
 
